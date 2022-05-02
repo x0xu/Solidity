@@ -11,7 +11,7 @@ contract Counter {
         každá premenná, ktorá je public má automaticky vytvorenú getter funkciu. Nie je preto potrebné ju definovať
         Premenná uint je zkraktkou pre unsigned intiger, čo je číslo, ktoré nepracuje so znamienkom +/-
         Defaultne zaberá 256bitov v pamäti a je ekvivalentom zápisu uint256. Rozsah je od 0 do 2 ** 256 - 1
-         Intiger/číslo, ktoré pracuje so znamienkami +/- a teda môže byť aj záporné sa značí typom "int"
+        Intiger/číslo, ktoré pracuje so znamienkami +/- a teda môže byť aj záporné sa značí typom "int"
      */
     uint256 public count;
 
@@ -24,6 +24,7 @@ contract Counter {
     function inc() public {
         /*
             premenná count bude zvýšená o 1
+            skrátený zápis count = count + 1;
          */
         count += 1;
     }
